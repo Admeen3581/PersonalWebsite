@@ -1,0 +1,24 @@
+:root
+{
+    --egyptian_blue: #1034A6;
+    --cyan_blue: #1192A6;
+    --grayish_blue: #374573;
+    --my_gray: #2D2E33;
+    --whiteish_gray: #919BA6;
+    --tan: #A8A78D;
+}
+
+body
+{
+    margin: 0px;
+}
+
+.topBar
+{
+    overflow: hidden;
+    position: fixed;
+    float: top;
+    height: 70px;
+    width: 100%;
+    background-color: #919BA6;
+}
