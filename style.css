@@ -14,23 +14,53 @@ body
     background-color: black;
 }
 
-.initImg .center
+.initBackground .center
 {
-    opacity: 50%;
-    display: block;
+    opacity: 70%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 95%;
+    height: 100%;
     position: absolute;
+}
+
+.initBackground .name
+{
+    color: #FFFFFF;
+    font-size: 30px;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+.name
+{
+    padding-inline: 30px;
+    padding-top: 5px;
+    border-radius: 20px;
+    opacity: 80%;
+}
+
+.headshot
+{
+    position: absolute;
+    background-color: #374573;
+    left: 20%;
+    top: 30%;
+    width: 500px;
+    height: 465px;
+    border-radius: 30px;
+}
+
+.navBar
+{
+    opacity: 60%;
 }
 
 .topBar
 {
-    margin: auto;
-    overflow: hidden;
-    position: fixed;
-    float: top;
+    position: absolute;
+    top: 0;
     height: 70px;
     width: 100%;
     background-color: #919BA6;
@@ -49,7 +79,6 @@ body
 .rightSideBar
 {
     position: absolute;
-    display: block;
     right: 0;
     padding-left: 5px;
     height: 100%;
