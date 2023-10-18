@@ -70,7 +70,7 @@ body
 .topBar #logo
 {
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 0;
     padding: 18px 35px;
     height: 35px;
