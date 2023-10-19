@@ -1,6 +1,6 @@
 function loadCommonHead()
 {
-    fetch("commonHead.html")
+    fetch("../commonElements/commonHead.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById('commonHead').innerHTML = data;
