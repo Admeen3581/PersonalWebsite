@@ -75,6 +75,7 @@ body
     padding: 18px 35px;
     height: 35px;
     width: auto;
+    cursor: pointer;
 }
 
 .topBar a
