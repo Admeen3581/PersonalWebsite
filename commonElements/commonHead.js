@@ -7,6 +7,7 @@ function loadCommonHead()
         });
 }
 
-loadCommonHead();
 
-document.addEventListener('DOMContentLoaded', loadCommonHead);
+
+
+loadCommonHead();

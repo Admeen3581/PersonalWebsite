@@ -8,15 +8,15 @@ function goHome()
 
 function goAboutme()
 {
-    window.location.href = "../aboutme/aboutme.html";
+    window.location.href = "aboutMe/aboutme.html";
 }
 
 function goForBusiness()
 {
-    window.location.href = "../forbusiness/forBusiness.html";
+    window.location.href = "forBusiness/forBusiness.html";
 }
 
 function goForSocials()
 {
-    window.location.href = "../forsocials/forSocials.html";
+    window.location.href = "forSocials/forSocials.html";
 }
