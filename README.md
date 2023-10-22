@@ -20,4 +20,5 @@ User Engagement
 Logo
 Security (mention that there are no specific security measures)
 GitHub Repository
+DO NOT PUSH ASSETS. UPLOAD THEM MANUALLY.
 
