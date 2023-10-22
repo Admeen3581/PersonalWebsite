@@ -14,7 +14,7 @@ function goHome()
 
 function goAboutme()
 {
-    window.location.href = "../aboutMe/aboutme.html";
+    window.location.href = "../forServices/forServices.html";
 }
 
 function goForBusiness()
