@@ -112,5 +112,6 @@ body
 
 @font-face
 {
-    font-family: "Ethnocentric"; src: local(Ethnocentric);
+    font-family: F16;
+    src: url("assets/ethnocentric rg.otf") format('opentype');
 }
