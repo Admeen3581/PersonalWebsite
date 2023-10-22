@@ -39,7 +39,7 @@ body
     padding-top: 5px;
     border-radius: 20px;
     opacity: 80%;
-    font-family: "Ethnocentric Rg", monospace;
+    font-family: Ethnocentric, monospace;
 }
 
 .headshot
@@ -112,6 +112,6 @@ body
 
 @font-face
 {
-    font-family: "Ethnocentric Rg";
+    font-family: F16;
     src: url("assets/ethnocentric rg.ttf") format('truetype');
 }
