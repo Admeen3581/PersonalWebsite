@@ -7,7 +7,4 @@ function loadCommonHead()
         });
 }
 
-
-
-
 loadCommonHead();

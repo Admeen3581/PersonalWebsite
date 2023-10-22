@@ -8,12 +8,6 @@
     --tan: #A8A78D;
 }
 
-body
-{
-    margin: 0;
-    background-color: black;
-}
-
 .initBackground .center
 {
     opacity: 70%;
@@ -51,63 +45,6 @@ body
     width: 500px;
     height: 465px;
     border-radius: 30px;
-}
-
-.navBar
-{
-    opacity: 90%;
-}
-
-.topBar
-{
-    position: absolute;
-    top: 0;
-    height: 70px;
-    width: 100%;
-    background-color: #919BA6;
-}
-
-.topBar #logo
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 18px 35px;
-    height: 35px;
-    width: auto;
-    cursor: pointer;
-}
-
-.topBar a
-{
-    float: right;
-    text-align: center;
-    padding: 22px 40px 15px;
-    text-decoration: none;
-    font-family: Bahnschrift, monospace;
-    font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.leftSideBar
-{
-    position: absolute;
-    left: 0;
-    padding-right: 5px;
-    height: 100%;
-    width: 2%;
-    background-color: #919BA6;
-}
-
-.rightSideBar
-{
-    position: absolute;
-    right: 0;
-    padding-left: 5px;
-    height: 100%;
-    width: 2%;
-    background-color: #919BA6;
 }
 
 @font-face
