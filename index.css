@@ -113,5 +113,5 @@ body
 @font-face
 {
     font-family: F16;
-    src: url("assets/ethnocentric rg.otf") format('opentype');
+    src: url("assets/ethnocentric rg.ttf") format('truetype');
 }
