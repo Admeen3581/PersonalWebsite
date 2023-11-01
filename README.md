@@ -21,6 +21,8 @@ Logo
 Security (mention that there are no specific security measures)
 GitHub Repository
 
+420 blaze it
+
 ##INSPIRATION SITES:
 https://codewithsadee.github.io/naft-nft_marketplace/ 
 https://codewithsadee.github.io/micro/#top 
