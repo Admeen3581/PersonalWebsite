@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="index.css">
     <title>Adam Long - Personal Website</title>
+    
 </head>
+
+<script src="homepage.js"></script>
 
 <body>
 
@@ -27,6 +30,41 @@
 
     </div>
 
+    <div class="skillz">
+        <ul>
+            <li>
+                <img src="assets/icons/icons8-water-ski-100.svg" alt="waterski" title="I waterski competitively">
+            </li>
+            <li>
+                <img src="assets/icons/software-development-icon.svg" alt="programming" title="I enjoy programming">
+            </li>
+            <li>
+                <img src="assets/icons/saw-icon.svg" alt="woodworking" title="I complete woodworking projects in my free-time">
+            </li>
+            <li>
+                <img src="assets/icons/graphic-design-icon.svg" alt="graphic design" title="I freelance graphic design">
+            </li>
+            <li>
+                <img src="assets/icons/race-car.svg" alt="racecar" title="I love driving & track racing">
+            </li>
+        </ul>
+    </div>
+
+    <div class="aboutme" id="aboutme">
+
+        <h2>About Me</h2>
+
+        <script>
+            loadTextFileToElement("assets/text/generalAboutMe.txt", "general");
+        </script>
+
+        <p id="general"></p>
+
+
+    </div>
+
+    <!--NAV BAR ~ DO NOT CROSS-->
+
     <div class="navBar">
 
         <div class="topBar">
@@ -41,34 +79,7 @@
         </div>
     </div>
 
-    <div class="skillz">
-        <ul>
-            <li>
-                <img src="assets/icons/icons8-water-ski-100.svg" alt="waterski">
-            </li>
-            <li>
-                <img src="assets/icons/culture-cinema-icon.svg" alt="theatre">
-            </li>
-            <li>
-                <img src="assets/icons/software-development-icon.svg" alt="programming">
-            </li>
-            <li>
-                <img src="assets/icons/saw-icon.svg" alt="woodworking">
-            </li>
-            <li>
-                <img src="assets/icons/graphic-design-icon.svg" alt="graphic design">
-            </li>
-        </ul>
-    </div>
-
-    <div class="spacer"></div>
-
-    <div class="aboutme">
-        <h2 style="color: wheat">About Me</h2>
-    </div>
-
 </body>
-<script src="homepage.js"></script>
 </html>
 
 <!--NEXT TIME: README OR ABOUT ME AND TRANSITIONAL JAZZ-->
