@@ -22,3 +22,9 @@ Security (mention that there are no specific security measures)
 GitHub Repository
 DO NOT PUSH ASSETS. UPLOAD THEM MANUALLY.
 
+
+##INSPIRATION SITES:
+https://codewithsadee.github.io/naft-nft_marketplace/ 
+https://codewithsadee.github.io/micro/#top 
+https://codewithsadee.github.io/gamics/
+
