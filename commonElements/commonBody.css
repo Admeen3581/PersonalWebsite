@@ -19,7 +19,7 @@ html
 body
 {
     margin: 0;
-    background-color: black;
+    background: linear-gradient(180deg, #000000 0%, var(--my_gray) 51%, var(--grayish_blue) 85%);
     height: 3000px;
 }
 

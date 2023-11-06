@@ -27,7 +27,7 @@ body
     opacity: 60%;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 100%;/*could be an issue for universal screen sizes*/
 }
 
 .initBackground .name
@@ -156,11 +156,30 @@ body
     border-right: #FFFFFF;
 }
 
-.aboutme p
+.whoAmI
 {
-    font-size: 15px;
+    font-family: Astrospace, monospace;
+    font-size: 12px;
+    margin: 64px;
+    line-height: 2.1;
+    text-align: left;
 }
 
+.whoAmI h3
+{
+    text-align: center;
+    line-height: 2.5;
+}
+
+.whoAmI .circle
+{
+    width: 30%;
+    float: left;
+    margin-right: 128px;
+    border-radius: 50%;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+}
 
 /*Scroll Bar Style*/
 ::-webkit-scrollbar
