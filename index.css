@@ -156,7 +156,7 @@ body
     border-right: #FFFFFF;
 }
 
-.whoAmI
+.whoAmI, .interests
 {
     font-family: Astrospace, monospace;
     font-size: 12px;
@@ -165,21 +165,44 @@ body
     text-align: left;
 }
 
-.whoAmI h3
+.whoAmI h3, .philosophy h3, .interests h3
 {
     text-align: center;
     line-height: 2.5;
+    font-size: 15px;
 }
 
-.whoAmI .circle
+.whoAmI .circle, .interests .circle
 {
     width: 30%;
+    min-width: 300px;
     float: left;
     margin-right: 128px;
     border-radius: 50%;
     -webkit-shape-outside: circle();
     shape-outside: circle();
 }
+
+.philosophy
+{
+    font-family: Astrospace, monospace;
+    font-size: 12px;
+    margin: 64px;
+    line-height: 2.1;
+    text-align: right;
+}
+
+.philosophy .circle
+{
+    width: 30%;
+    min-width: 300px;
+    float: right;
+    margin-left: 128px;
+    border-radius: 50%;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+}
+
 
 /*Scroll Bar Style*/
 ::-webkit-scrollbar
