@@ -212,6 +212,7 @@ a:hover:after
 {
     width: 30%;
     min-width: 300px;
+    max-width: 500px;
     float: left;
     margin-right: 128px;
     border-radius: 50%;
@@ -232,6 +233,7 @@ a:hover:after
 {
     width: 30%;
     min-width: 300px;
+    max-width: 500px;
     float: right;
     margin-left: 128px;
     border-radius: 50%;
