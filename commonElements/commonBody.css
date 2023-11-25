@@ -9,6 +9,8 @@
     --whiteish_gray: #707880;
     --tan: #A8A78D;
     --blueish_gray: #445561;
+
+    --text_gradient: linear-gradient(to right, var(--egyptian_blue), #016276);
 }
 html
 {
@@ -23,41 +25,75 @@ body
     height: 3000px;
 }
 
-.navBar
-{
-    opacity: 90%;
-}
-
 .topBar
 {
-    position: fixed;
+    opacity: 90%;
     top: 0;
     height: 70px;
     width: 100%;
-    background-color: #919BA6;
+    display: flex;
+    position: fixed;
+    margin: auto;
+    background-color: var(--whiteish_gray);
 }
 
 .topBar #logo
 {
     position: absolute;
-    left: 0;
-    top: 0;
+    top: -10px;
     padding: 18px 35px;
     height: 35px;
     width: auto;
     cursor: pointer;
 }
 
-.topBar a
+.navItems
 {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+}
+
+.navItems ul li
+{
+    display: inline;
     float: right;
-    text-align: center;
-    padding: 26px 40px 15px;
+}
+
+a
+{
+    position: relative;
     text-decoration: none;
     font-family: Astrospace, monospace;
-    font-weight: bold;
     font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 0.2px;
+    padding: 20px 40px;
     cursor: pointer;
+}
+
+a:after
+{
+    content: "";
+    position: absolute;
+    background: var(--text_gradient);
+    height: 4px;
+    width: 0;
+    left: 20%;
+    bottom: 6px;
+    transition: 0.5s;
+}
+
+a:hover
+{
+    color: var(--egyptian_blue);
+    transition: 0.5s;
+}
+
+a:hover:after
+{
+    width: 60%;
 }
 
 /*Scroll Bar Style*/

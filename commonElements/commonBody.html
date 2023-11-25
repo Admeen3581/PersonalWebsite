@@ -4,20 +4,20 @@
 <body>
     <link rel="stylesheet" href="../commonElements/commonBody.css">
 
-    <div class="navBar">
+        <div class="topBar">
 
-      <div class="topBar">
+            <div class="navItems">
+                <ul> <!--Reverse order-->
+                    <li><a id="contactButton">Contact Me</a></li>
+                    <li><a id="business" onclick="goForBusiness()">Portfolio</a></li>
+                    <li><a id="social" onclick="goForSocials()">Socials</a></li>
+                    <li><a id="about" onclick="goAboutme()">Services</a></li>
+                </ul>
 
-        <img src="../assets/personalv31x.png" alt="Adam's Logo" id="logo" onclick="goHome()">
+                <img src="../assets/personalv31x.png" alt="Adam's Logo" id="logo" onclick="goHome()">
 
-        <a id="contactButton">Contact Me</a>
-        <a id="business" onclick="goForBusiness()">Portfolio</a>
-        <a id="social" onclick="goForSocials()">Socials</a>
-        <a id="about" onclick="goAboutme()">Services</a>
-
-      </div>
-    </div>
-
+            </div>
+        </div>
     <!--index.html can't use common elements-->
 
 </body>
