@@ -21,7 +21,7 @@ body
 {
     margin: 0;
     height: 4000px;
-    background: linear-gradient(180deg, #000000 0%, var(--my_gray) 51%, var(--grayish_blue) 85%);
+    background: linear-gradient(180deg, #000000 10%, var(--my_gray) 55%, var(--grayish_blue) 90%);
 }
 
 .initBackground #backgndImg
