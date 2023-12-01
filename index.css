@@ -74,7 +74,7 @@ body
 
 .topBar
 {
-    opacity: 90%;
+    opacity: 95%;
     top: 0;
     height: 70px;
     width: 100%;
@@ -175,6 +175,7 @@ a:hover:after
 .aboutme
 {
     position: relative;
+    display: inline-block;
     width: 100%;
     height: 200px;
     text-align: center;
@@ -239,6 +240,39 @@ a:hover:after
     border-radius: 50%;
     -webkit-shape-outside: circle();
     shape-outside: circle();
+}
+
+.blogs
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 5%;
+}
+
+.blogs h2
+{
+    font-family: Astrospace, monospace;
+    font-size: 60px;
+    border-style: solid;
+    border-top: #FFFFFF;
+    border-left: #FFFFFF;
+    border-right: #FFFFFF;
+}
+
+.blogList img
+{
+    max-width: 25%;
+}
+
+.blogList ul li
+{
+    margin: 20px;
+    display: inline;
+    align-content: center;
 }
 
 
