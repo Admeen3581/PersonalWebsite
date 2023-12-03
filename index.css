@@ -7,6 +7,7 @@
     --whiteish_gray: #707880;
     --tan: #A8A78D;
     --blueish_gray: #445561;
+    --standard_text: #EFEFEF;
 
     --text_gradient: linear-gradient(to right, var(--egyptian_blue), #016276);
 }
@@ -192,7 +193,7 @@ scales font with screen size.
     width: 100%;
     height: 200px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--standard_text);
     padding-top: 5%;
 }
 
@@ -202,9 +203,9 @@ scales font with screen size.
     font-size: 60px;
     letter-spacing: 5px;
     border-style: solid;
-    border-top: #FFFFFF;
-    border-left: #FFFFFF;
-    border-right: #FFFFFF;
+    border-top: var(--standard_text);
+    border-left: var(--standard_text);
+    border-right: var(--standard_text);
 }
 
 .whoAmI, .interests
@@ -260,7 +261,7 @@ scales font with screen size.
 {
     display: inline;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--standard_text);
     padding-top: 5%;
 }
 
@@ -269,9 +270,9 @@ scales font with screen size.
     font-family: Astrospace, monospace;
     font-size: 60px;
     border-style: solid;
-    border-top: #FFFFFF;
-    border-left: #FFFFFF;
-    border-right: #FFFFFF;
+    border-top: var(--standard_text);
+    border-left: var(--standard_text);
+    border-right: var(--standard_text);
 }
 
 .blogs .griddedText h3
@@ -302,17 +303,10 @@ scales font with screen size.
 {
     margin: 10px 0 10px 0;
     padding: 0;
-    color: #A1ABB6;
+    color: var(--cyan_blue);
     font-size: 18px;
     position: relative;
     top: 3px;
-}
-
-.griddedText h6
-{
-    margin: 10px 10px 10px 0;
-    padding: 0;
-    color: #FFFFFF;
 }
 
 .griddedText a
@@ -349,6 +343,18 @@ scales font with screen size.
     margin-right: 7%;
 }
 
+.griddedText h6
+{
+    margin: 10px 10px 10px 0;
+    padding: 0;
+    color: var(--standard_text);
+}
+
+.griddedText .carotIcon
+{
+    color: var(--cyan_blue);
+}
+
 .griddedText a:hover h6
 {
     color: var(--cyan_blue);
@@ -358,7 +364,7 @@ scales font with screen size.
 
 .griddedText a h6
 {
-    color: #FFFFFF;
+    color: var(--standard_text);
     transition: 0.5s;
 }
 
