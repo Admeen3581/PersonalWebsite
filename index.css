@@ -246,7 +246,7 @@ body
 
 .blogs
 {
-    display: inline-block;
+    display: inline;
     text-align: center;
     color: #FFFFFF;
     padding-top: 5%;
@@ -262,16 +262,23 @@ body
     border-right: #FFFFFF;
 }
 
-.blogList img
+.gridContainer
 {
-    max-width: 25%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
 }
 
-.blogList ul li
+.gridContainer > div
 {
-    margin: 20px;
-    display: inline;
-    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.gridContainer > div img
+{
+    max-width: 85%;
 }
 
 /*Scroll Bar Style*/
