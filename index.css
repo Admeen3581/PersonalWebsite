@@ -44,6 +44,7 @@ body
 .name
 {
     padding-inline: 30px;
+    letter-spacing: 2px;
     padding-top: 5px;
     border-radius: 20px;
     opacity: 80%;
@@ -107,7 +108,7 @@ body
     float: right;
 }
 
-a
+.navItems a
 {
     position: relative;
     text-decoration: none;
@@ -120,7 +121,7 @@ a
     cursor: pointer;
 }
 
-a:after
+.navItems a:after
 {
     content: "";
     position: absolute;
@@ -132,13 +133,13 @@ a:after
     transition: 0.5s;
 }
 
-a:hover
+.navItems a:hover
 {
     color: var(--egyptian_blue);
     transition: 0.5s;
 }
 
-a:hover:after
+.navItems a:hover:after
 {
     width: 60%;
 }
@@ -187,6 +188,7 @@ a:hover:after
 {
     font-family: Astrospace, monospace;
     font-size: 60px;
+    letter-spacing: 5px;
     border-style: solid;
     border-top: #FFFFFF;
     border-left: #FFFFFF;
@@ -244,10 +246,7 @@ a:hover:after
 
 .blogs
 {
-    position: relative;
     display: inline-block;
-    width: 100%;
-    height: 200px;
     text-align: center;
     color: #FFFFFF;
     padding-top: 5%;
@@ -274,7 +273,6 @@ a:hover:after
     display: inline;
     align-content: center;
 }
-
 
 /*Scroll Bar Style*/
 ::-webkit-scrollbar
