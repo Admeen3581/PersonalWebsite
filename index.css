@@ -262,23 +262,67 @@ body
     border-right: #FFFFFF;
 }
 
+.blogs .griddedText h3
+{
+    font-size: 24px;
+    font-family: Astrospace, monospace;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+.blogs .griddedText p
+{
+    font-size: 14px;
+    font-family: "Blue Highway", monospace;
+    color: #A1ABB6;
+    display: block;
+    line-height: 1.4;
+}
+
+.blogs .griddedText time
+{
+    font-size: 14px;
+    font-family: "Blue Highway", monospace;
+    color: #A1ABB6;
+}
+
+.blogs .griddedText h6
+{
+    margin: 10px 10px 10px 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+.blogs .griddedText a
+{
+    text-decoration: none;
+}
+
 .gridContainer
 {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    padding: 10px;
+    padding: 10px 10px 0;
 }
 
 .gridContainer > div
 {
     text-align: center;
     font-size: 30px;
-    padding-bottom: 15px;
 }
 
 .gridContainer > div img
 {
     max-width: 85%;
+    border-radius: 15px;
+    aspect-ratio: 13/16;
+}
+
+.gridContainer .griddedText
+{
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 /*Scroll Bar Style*/
@@ -306,4 +350,9 @@ body
 @font-face {
     font-family: "Astrospace";
     src: url("assets/Astrospace.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Blue Highway";
+    src: url("assets/blue highway rg.otf") format("opentype");
 }
