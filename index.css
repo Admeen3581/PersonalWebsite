@@ -120,7 +120,7 @@ scales font with screen size.
     float: right;
 }
 
-.navItems a
+.navItems .navLink
 {
     position: relative;
     text-decoration: none;
@@ -133,7 +133,7 @@ scales font with screen size.
     cursor: pointer;
 }
 
-.navItems a:after
+.navItems .navLink:after
 {
     content: "";
     position: absolute;
@@ -145,13 +145,13 @@ scales font with screen size.
     transition: 0.5s;
 }
 
-.navItems a:hover
+.navItems .navLink:hover
 {
     color: var(--egyptian_blue);
     transition: 0.5s;
 }
 
-.navItems a:hover:after
+.navItems .navLink:hover:after
 {
     width: 60%;
 }
@@ -361,7 +361,6 @@ scales font with screen size.
     color: #FFFFFF;
     transition: 0.5s;
 }
-
 
 /*Scroll Bar Style*/
 ::-webkit-scrollbar

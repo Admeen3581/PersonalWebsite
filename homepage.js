@@ -1,28 +1,6 @@
 //Home page scripting file
 //Written by Adam Long
 
-function goHome()
-{
-    window.location.href = "index.html";
-}
-
-function goAboutme()
-{
-    window.location.href = "forServices/forServices.html";
-}
-
-function goForBusiness()
-{
-    window.location.href = "forBusiness/forBusiness.html";
-}
-
-function goForSocials()
-{
-    window.location.href = "forSocials/forSocials.html";
-}
-
-
-
 function loadTextFileToElement(path, id)
 {
     let textFile = new XMLHttpRequest();

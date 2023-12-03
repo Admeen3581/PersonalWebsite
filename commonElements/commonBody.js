@@ -12,20 +12,5 @@ function goHome()
     window.location.href = "../index.html";
 }
 
-function goAboutme()
-{
-    window.location.href = "../forServices/forServices.html";
-}
-
-function goForBusiness()
-{
-    window.location.href = "../forBusiness/forBusiness.html";
-}
-
-function goForSocials()
-{
-    window.location.href = "../forSocials/forSocials.html";
-}
-
 //Runner
 loadCommonBody();
