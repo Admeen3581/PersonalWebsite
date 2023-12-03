@@ -60,7 +60,7 @@ body
     float: right;
 }
 
-a
+.navItems a
 {
     position: relative;
     text-decoration: none;
@@ -73,7 +73,7 @@ a
     cursor: pointer;
 }
 
-a:after
+.navItems :after
 {
     content: "";
     position: absolute;
@@ -85,13 +85,13 @@ a:after
     transition: 0.5s;
 }
 
-a:hover
+.navItems a:hover
 {
     color: var(--egyptian_blue);
     transition: 0.5s;
 }
 
-a:hover:after
+.navItems a:hover:after
 {
     width: 60%;
 }

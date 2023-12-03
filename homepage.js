@@ -21,6 +21,8 @@ function goForSocials()
     window.location.href = "forSocials/forSocials.html";
 }
 
+
+
 function loadTextFileToElement(path, id)
 {
     let textFile = new XMLHttpRequest();

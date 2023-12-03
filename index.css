@@ -20,8 +20,20 @@ html
 body
 {
     margin: 0;
-    height: 4000px;
+    height: auto;
     background: linear-gradient(180deg, #000000 10%, var(--my_gray) 55%, var(--grayish_blue) 90%);
+}
+
+/*
+h1 {
+  font-size: calc(1.5rem + 3vw);
+}
+scales font with screen size.
+ */
+
+.spacer
+{
+    height: 80px;
 }
 
 .initBackground #backgndImg
@@ -279,23 +291,34 @@ body
     line-height: 1.4;
 }
 
-.blogs .griddedText time
+.griddedText time
 {
     font-size: 14px;
     font-family: "Blue Highway", monospace;
     color: #A1ABB6;
 }
 
-.blogs .griddedText h6
+.griddedText h5
+{
+    margin: 10px 0 10px 0;
+    padding: 0;
+    color: #A1ABB6;
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+}
+
+.griddedText h6
 {
     margin: 10px 10px 10px 0;
     padding: 0;
     color: #FFFFFF;
 }
 
-.blogs .griddedText a
+.griddedText a
 {
     text-decoration: none;
+    display: flex;
 }
 
 .gridContainer
@@ -313,7 +336,8 @@ body
 
 .gridContainer > div img
 {
-    max-width: 85%;
+    max-width: 500px;
+    width: 85%;
     border-radius: 15px;
     aspect-ratio: 13/16;
 }
@@ -324,6 +348,20 @@ body
     margin-left: 7%;
     margin-right: 7%;
 }
+
+.griddedText a:hover h6
+{
+    color: var(--cyan_blue);
+    transition: 0.5s;
+    padding-left: 100px; /*bug but it looks cool so I'm leaving it*/
+}
+
+.griddedText a h6
+{
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
 
 /*Scroll Bar Style*/
 ::-webkit-scrollbar
