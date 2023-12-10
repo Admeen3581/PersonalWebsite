@@ -98,6 +98,10 @@ scales font with screen size.
     background-color: var(--whiteish_gray);
 }
 
+/*Hides Navbar when footer is reached*/
+.hidden {display: none;}
+.hidden:not {display: flex;}
+
 .topBar #logo
 {
     position: absolute;
@@ -368,6 +372,109 @@ scales font with screen size.
     transition: 0.5s;
 }
 
+/*
+.footerDetails
+{
+    background-color: var(--whiteish_gray);
+    padding: 40px;
+    opacity: 95%;
+}
+
+.footerTop .logo
+{
+    max-width: 200px;
+}
+
+.copyright
+{
+    background-color: var(--my_gray);
+    padding: 10px;
+    color: var(--standard_text);
+    text-align: center;
+}
+
+.copyright p
+{
+    font-size: 14px;
+    line-height: 1.8;
+}*/
+
+/* Footer Styles */
+.footerDetails {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    font-family: "Blue Highway", monospace;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerBrand {
+    flex: 1;
+    max-width: 300px;
+}
+
+.logobottom {
+    max-width: 100%;
+    height: auto;
+}
+
+.footerText {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.contactList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contactItem {
+    margin-bottom: 10px;
+}
+
+.footerList {
+    flex: 1;
+    max-width: 200px;
+}
+
+.footerListTitle {
+    font-weight: bold;
+}
+
+.footerLink {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+.socialWrapper {
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+/* Copyright Styles */
+.copyright {
+    background-color: var(--my_gray);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+
 /*Scroll Bar Style*/
 ::-webkit-scrollbar
 {
@@ -390,6 +497,7 @@ scales font with screen size.
     font-family: "Ethnocentric Rg";
     src: url("assets/ethnocentric rg.ttf") format('truetype');
 }
+
 @font-face {
     font-family: "Astrospace";
     src: url("assets/Astrospace.ttf") format("truetype");
