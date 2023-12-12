@@ -24,47 +24,18 @@ function loadTextFileToElement(path, id)
 
 function hideNavBarOnVisibleFooter()
 {
-    /*
-    const navbar = document.getElementById('navbar');
-    const footer = document.querySelector(".footerDetails");
-
-    if (navbar && footer)
+    var prevScrollpos = window.scrollY;
+    window.onscroll = function()
     {
-        window.addEventListener('scroll', relay(function ()
+        var currentScrollPos = window.scrollY;
+        if (prevScrollpos > currentScrollPos)
         {
-            const rectNavbar = navbar.getBoundingClientRect();
-            const rectFoot = footer.getBoundingClientRect();
-
-            if (rectFoot && rectNavbar)
-            {
-                console.log("HELLOOOO");
-                if (rectNavbar.bottom >= rectFoot.top)
-                {
-                    navbar.classList.add("hidden");
-                } else {
-                    navbar.classList.remove("hidden");
-                }
-            }
-        }, 100));
-    }
-
-     */
-    document.addEventListener('DOMContentLoaded', relay(function () {
-        var navbar = document.getElementById('navbar');
-        var footer = document.getElementById('foot');
-
-        if (navbar && footer) {
-            var observer = new IntersectionObserver(function (entries) {
-                if (entries[0].isIntersecting) {
-                    navbar.classList.add('hidden');
-                } else {
-                    navbar.classList.remove('hidden');
-                }
-            });
-
-            observer.observe(footer);
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-71px";
         }
-    }, 100));
+        prevScrollpos = currentScrollPos;
+    }
 }
 
 function relay(func, delay)

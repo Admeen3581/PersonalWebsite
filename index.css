@@ -1,3 +1,4 @@
+/*General Styles*/
 :root
 {
     --egyptian_blue: #1034A6;
@@ -25,18 +26,12 @@ body
     background: linear-gradient(180deg, #000000 10%, var(--my_gray) 55%, var(--grayish_blue) 90%);
 }
 
-/*
-h1 {
-  font-size: calc(1.5rem + 3vw);
-}
-scales font with screen size.
- */
-
 .spacer
 {
     height: 80px;
 }
 
+/*Front Image Styles*/
 .initBackground #backgndImg
 {
     opacity: 60%;
@@ -75,8 +70,7 @@ scales font with screen size.
     margin: 5px;
 }
 
-.headshot
-{
+.headshot {
     position: absolute;
     background-color: var(--grayish_blue);
     left: 20%;
@@ -86,6 +80,7 @@ scales font with screen size.
     border-radius: 30px;
 }
 
+/*Navbar Styles*/
 .topBar
 {
     opacity: 95%;
@@ -96,11 +91,8 @@ scales font with screen size.
     position: fixed;
     margin: auto;
     background-color: var(--whiteish_gray);
+    transition: 0.7s;
 }
-
-/*Hides Navbar when footer is reached*/
-.hidden {display: none;}
-.hidden:not {display: flex;}
 
 .topBar #logo
 {
@@ -161,6 +153,7 @@ scales font with screen size.
     width: 60%;
 }
 
+/*Divider Styles*/
 .skillz
 {
     position: relative;
@@ -190,6 +183,7 @@ scales font with screen size.
     margin-inline: 5%;
 }
 
+/*About-Me Styles*/
 .aboutme
 {
     position: relative;
@@ -261,6 +255,7 @@ scales font with screen size.
     shape-outside: circle();
 }
 
+/*Blog Styles*/
 .blogs
 {
     display: inline;
@@ -372,11 +367,13 @@ scales font with screen size.
     transition: 0.5s;
 }
 
-/*
+/* Footer Styles */
 .footerDetails
 {
     background-color: var(--whiteish_gray);
-    padding: 40px;
+    color: #fff;
+    padding: 40px 0;
+    font-family: "Blue Highway", monospace;
     opacity: 95%;
 }
 
@@ -385,68 +382,55 @@ scales font with screen size.
     max-width: 200px;
 }
 
-.copyright
+.footerTop
 {
-    background-color: var(--my_gray);
-    padding: 10px;
-    color: var(--standard_text);
-    text-align: center;
-}
-
-.copyright p
-{
-    font-size: 14px;
-    line-height: 1.8;
-}*/
-
-/* Footer Styles */
-.footerDetails {
-    background-color: #333;
-    color: #fff;
-    padding: 30px 0;
-    font-family: "Blue Highway", monospace;
-}
-
-.footerTop {
     display: flex;
     justify-content: space-between;
 }
 
-.footerBrand {
+.footerBrand
+{
     flex: 1;
     max-width: 300px;
 }
 
-.logobottom {
+.logobottom
+{
     max-width: 100%;
     height: auto;
 }
 
-.footerText {
+.footerText
+{
     margin-top: 20px;
     font-size: 14px;
 }
 
-.contactList {
+.contactList
+{
     list-style: none;
     padding: 0;
     margin-top: 20px;
 }
 
-.contactItem {
+.contactItem
+{
     margin-bottom: 10px;
 }
 
-.footerList {
+.generalFooterList
+{
     flex: 1;
     max-width: 200px;
 }
 
-.footerListTitle {
+.generalFooterListTitle
+{
     font-weight: bold;
 }
 
-.footerLink {
+.footerLink
+{
     color: #fff;
     text-decoration: none;
     display: block;
@@ -454,26 +438,31 @@ scales font with screen size.
     font-size: 14px;
 }
 
-.footerLink:hover {
+.footerLink:hover
+{
     text-decoration: underline;
 }
 
-.socialWrapper {
+.socialWrapper
+{
     max-width: 150px;
     margin-top: 20px;
 }
 
 /* Copyright Styles */
-.copyright {
+.copyright
+{
     background-color: var(--my_gray);
     color: #FFFFFF;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+}
+
+.copyright p
+{
     font-size: 14px;
     line-height: 1.8;
 }
-
-
 
 /*Scroll Bar Style*/
 ::-webkit-scrollbar
