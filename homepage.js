@@ -22,7 +22,7 @@ function loadTextFileToElement(path, id)
     textFile.send();
 }
 
-function hideNavBarOnVisibleFooter()
+function hideNavBarOnScroll()
 {
     var prevScrollpos = window.scrollY;
     window.onscroll = function()
