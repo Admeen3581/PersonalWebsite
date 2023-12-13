@@ -371,30 +371,22 @@ body
 .footerDetails
 {
     background-color: var(--whiteish_gray);
-    color: #fff;
-    padding: 40px 0;
+    color: #FFFFFF;
+    padding: 40px;
     font-family: "Blue Highway", monospace;
     opacity: 95%;
-}
-
-.footerTop .logo
-{
-    max-width: 200px;
-}
-
-.footerTop
-{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .footerBrand
 {
     flex: 1;
-    max-width: 300px;
+    max-width: 220px;
 }
 
-.logobottom
+#logobottom
 {
     max-width: 100%;
     height: auto;
@@ -421,7 +413,18 @@ body
 .generalFooterList
 {
     flex: 1;
-    max-width: 200px;
+    min-width: 140px;
+    max-width: 240px;
+}
+
+.generalFooterList ul
+{
+    list-style-type: none;
+}
+
+.generalFooterList ul li
+{
+    padding: 5px;
 }
 
 .generalFooterListTitle
@@ -441,13 +444,14 @@ body
 .footerLink:hover
 {
     text-decoration: underline;
+    color: var(--egyptian_blue);
 }
 
-.socialWrapper
-{
-    max-width: 150px;
-    margin-top: 20px;
-}
+/*.socialWrapper*/
+/*{*/
+/*    max-width: 150px;*/
+/*    margin-top: 20px;*/
+/*}*/
 
 /* Copyright Styles */
 .copyright
