@@ -168,6 +168,7 @@ body
     text-align: center;
     vertical-align: center;
     margin-right: 40px;
+    white-space: nowrap;
 }
 
 .skillz ul li
@@ -178,8 +179,11 @@ body
 
 .skillz ul li img
 {
-    width: 100px;
-    height: 100px;
+    aspect-ratio: 1 / 1;
+    min-width: 80px;
+    width: 10%;
+    max-width: 120px;
+    height: auto;
     margin-inline: 5%;
 }
 
@@ -358,21 +362,23 @@ body
 {
     color: var(--cyan_blue);
     transition: 0.5s;
-    padding-left: 100px; /*bug but it looks cool so I'm leaving it*/
+    padding-left: 20%; /*bug but it looks cool so I'm leaving it*/
+    white-space: nowrap;
 }
 
 .griddedText a h6
 {
     color: var(--standard_text);
     transition: 0.5s;
+    white-space: nowrap;
 }
 
 /* Footer Styles */
 .footerDetails
 {
     background-color: var(--whiteish_gray);
-    color: #FFFFFF;
-    padding: 40px;
+    color: #000000;
+    padding: 0 20px;
     font-family: "Blue Highway", monospace;
     opacity: 95%;
     display: flex;
@@ -415,6 +421,7 @@ body
     flex: 1;
     min-width: 140px;
     max-width: 240px;
+    text-align: center;
 }
 
 .generalFooterList ul
@@ -427,14 +434,15 @@ body
     padding: 5px;
 }
 
-.generalFooterListTitle
+.generalFooterList .media
 {
-    font-weight: bold;
+    display: inline-flex;
+    translate: -10%;
 }
 
 .footerLink
 {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     display: block;
     margin-top: 5px;
@@ -446,12 +454,6 @@ body
     text-decoration: underline;
     color: var(--egyptian_blue);
 }
-
-/*.socialWrapper*/
-/*{*/
-/*    max-width: 150px;*/
-/*    margin-top: 20px;*/
-/*}*/
 
 /* Copyright Styles */
 .copyright
@@ -486,6 +488,7 @@ body
     background: #002486;
 }
 
+/*Font Styles*/
 @font-face {
     font-family: "Ethnocentric Rg";
     src: url("assets/ethnocentric rg.ttf") format('truetype');
