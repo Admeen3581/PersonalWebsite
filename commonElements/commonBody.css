@@ -1,5 +1,6 @@
 /*index.css has these elements because it has to.*/
 
+/*General Styles*/
 :root
 {
     --egyptian_blue: #1034A6;
@@ -25,6 +26,7 @@ body
     height: 3000px;
 }
 
+/*Navbar styles*/
 .topBar
 {
     opacity: 95%;
@@ -35,6 +37,7 @@ body
     position: fixed;
     margin: auto;
     background-color: var(--whiteish_gray);
+    transition: 0.7s;
 }
 
 .topBar #logo

@@ -1,0 +1,122 @@
+/*General Styles*/
+:root
+{
+    --egyptian_blue: #1034A6;
+    --cyan_blue: #1192A6;
+    --grayish_blue: #374573;
+    --my_gray: #2D2E33;
+    --whiteish_gray: #707880;
+    --tan: #A8A78D;
+    --blueish_gray: #445561;
+
+    --text_gradient: linear-gradient(to right, var(--egyptian_blue), #016276);
+}
+html
+{
+    scroll-behavior: smooth;
+    scroll-padding: 30px;
+}
+
+body
+{
+    margin: 0;
+    background: linear-gradient(180deg, #000000 0%, var(--my_gray) 51%, var(--grayish_blue) 85%);
+    height: 3000px;
+}
+
+/* Footer Styles */
+.footerDetails
+{
+    background-color: var(--whiteish_gray);
+    color: #000000;
+    padding: 0 20px;
+    font-family: "Blue Highway", monospace;
+    opacity: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerBrand
+{
+    flex: 1;
+    max-width: 220px;
+}
+
+#logobottom
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.footerText
+{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.contactList
+{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contactItem
+{
+    margin-bottom: 10px;
+}
+
+.generalFooterList
+{
+    flex: 1;
+    min-width: 140px;
+    max-width: 240px;
+    text-align: center;
+}
+
+.generalFooterList ul
+{
+    list-style-type: none;
+}
+
+.generalFooterList ul li
+{
+    padding: 5px;
+}
+
+.generalFooterList .media
+{
+    display: inline-flex;
+    translate: -10%;
+}
+
+.footerLink
+{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.footerLink:hover
+{
+    text-decoration: underline;
+    color: var(--egyptian_blue);
+}
+
+/* Copyright Styles */
+.copyright
+{
+    background-color: var(--my_gray);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright p
+{
+    font-size: 14px;
+    line-height: 1.8;
+}
