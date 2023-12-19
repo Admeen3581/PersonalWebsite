@@ -45,8 +45,12 @@ body
     color: #FFFFFF;
     font-size: 30px;
     position: absolute;
-    left: 45%;
+    left: -800px;
     top: 45%;
+    -webkit-animation: slideName 1s forwards ;
+    -webkit-animation-delay: 1.5s;
+    animation: slideName 1s forwards;
+    animation-delay: 1.5s;
 }
 
 .name
@@ -70,15 +74,44 @@ body
     margin: 5px;
 }
 
-.headshot {
+.headshot
+{
     position: absolute;
     background-color: var(--grayish_blue);
-    left: 20%;
+    left: -950px;
     top: 30%;
-    width: 500px;
-    height: 465px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 465px;
+    height: 100%;
     border-radius: 30px;
+    -webkit-animation: slideHeadshot 1s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation: slideHeadshot 1s forwards;
+    animation-delay: 1.5s;
 }
+
+/*Front Image Animations*/
+@-webkit-keyframes slideHeadshot
+{
+    100% { left: 20%; }
+}
+
+@keyframes slideHeadshot
+{
+    100% { left: 20%; }
+}
+
+@-webkit-keyframes slideName
+{
+    100% { left: 45%; }
+}
+
+@keyframes slideName
+{
+    100% { left: 45%; }
+}
+
 
 /*Navbar Styles*/
 .topBar

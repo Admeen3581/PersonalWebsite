@@ -52,3 +52,21 @@ function relay(func, delay)
         }, delay);
     }
 }
+
+async function sleep(ms)//call with await sleep(<amount in ms>)
+{
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function onLoad()
+{
+    preventScrollDuringLoad();
+    window.scrollTo(0,0);
+}
+
+async function preventScrollDuringLoad()
+{
+    document.getElementById("html").style.overflow = "hidden";
+    await sleep(3000);
+    document.getElementById("html").style.overflow = "visible";
+}
