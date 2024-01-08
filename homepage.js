@@ -67,6 +67,6 @@ function onLoad()
 async function preventScrollDuringLoad()
 {
     document.getElementById("html").style.overflow = "hidden";
-    await sleep(3000);
+    await sleep(2500);
     document.getElementById("html").style.overflow = "visible";
 }
