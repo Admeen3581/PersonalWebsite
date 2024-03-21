@@ -37,16 +37,20 @@ body
     opacity: 60%;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;/*could be an issue for universal screen sizes*/
+    width: 100%;
+}
+
+.initBackground #backgndImgMobile
+{
+    display: none;
 }
 
 .initBackground .name
 {
     color: #FFFFFF;
-    font-size: 30px;
     position: absolute;
     left: -800px;
-    top: 45%;
+    top: 20%;
     -webkit-animation: slideName 1s forwards ;
     -webkit-animation-delay: 1.5s;
     animation: slideName 1s forwards;
@@ -65,12 +69,13 @@ body
 
 .name h5, p
 {
-    font-size: 13px;
+    font-size: 8px;
     display: inline;
 }
 
 .name h1
 {
+    font-size: 30px;
     margin: 5px;
 }
 
@@ -80,15 +85,21 @@ body
     background-color: var(--grayish_blue);
     left: -950px;
     top: 30%;
-    max-width: 500px;
+    max-width: 200px;
+    max-height: 186px;
     width: 100%;
-    max-height: 465px;
     height: 100%;
     border-radius: 30px;
     -webkit-animation: slideHeadshot 1s forwards;
     -webkit-animation-delay: 1.5s;
     animation: slideHeadshot 1s forwards;
     animation-delay: 1.5s;
+}
+
+#me /*directly keeps image sized within bounds of the headshot class*/
+{
+    width: 74%;
+    height: 100%;
 }
 
 /*Front Image Animations*/
@@ -102,6 +113,16 @@ body
     100% { left: 20%; }
 }
 
+@-webkit-keyframes slideHeadShotMobile
+{
+    100% { left: 25%; }
+}
+
+@keyframes slideHeadShotMobile
+{
+    100% { left: 25%; }
+}
+
 @-webkit-keyframes slideName
 {
     100% { left: 45%; }
@@ -110,6 +131,16 @@ body
 @keyframes slideName
 {
     100% { left: 45%; }
+}
+
+@-webkit-keyframes slideNameMobile
+{
+    100% { left: 10%; }
+}
+
+@keyframes slideNameMobile
+{
+    100% { left: 10%; }
 }
 
 
@@ -186,14 +217,17 @@ body
     width: 60%;
 }
 
-/*Divider Styles*/
+/*Divider Styles --removed from main build for now--*/
 .skillz
 {
+    display: none;
+
     position: relative;
     margin-inside: 50px;
     background-color: var(--blueish_gray);
     border: solid var(--blueish_gray);
     margin-bottom: 0;
+    width: 100%;
 }
 
 .skillz ul
@@ -202,6 +236,7 @@ body
     vertical-align: center;
     margin-right: 40px;
     white-space: nowrap;
+    width: 100%;
 }
 
 .skillz ul li
@@ -235,7 +270,7 @@ body
 .aboutme h2
 {
     font-family: Astrospace, monospace;
-    font-size: 60px;
+    font-size: 30px;
     letter-spacing: 5px;
     border-style: solid;
     border-top: var(--standard_text);
@@ -304,7 +339,7 @@ body
 .blogs h2
 {
     font-family: Astrospace, monospace;
-    font-size: 60px;
+    font-size: 30px;
     border-style: solid;
     border-top: var(--standard_text);
     border-left: var(--standard_text);
@@ -313,7 +348,7 @@ body
 
 .blogs .griddedText h3
 {
-    font-size: 24px;
+    font-size: 16px;
     font-family: Astrospace, monospace;
     margin-bottom: 15px;
     margin-top: 8px;
@@ -503,7 +538,205 @@ body
     line-height: 1.8;
 }
 
-/*Scroll Bar Style*/
+/* Responsive Parameters */
+
+/*Phone & Other small devices*/
+@media (max-width: 890px)
+{
+    .initBackground #backgndImg
+    {
+        display: none;
+    }
+
+    .initBackground #backgndImgMobile
+    {
+        display: inline;
+        opacity: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .headshot
+    {
+        max-width: 300px;
+        max-height: 279px;
+        top: 20%;
+        -webkit-animation: slideHeadShotMobile 1s forwards ;
+        -webkit-animation-delay: 1.5s;
+        animation: slideHeadShotMobile 1s forwards;
+        animation-delay: 1.5s;
+    }
+
+    .initBackground .name
+    {
+        top: 70%;
+        -webkit-animation: slideNameMobile 1s forwards ;
+        -webkit-animation-delay: 1.5s;
+        animation: slideNameMobile 1s forwards;
+        animation-delay: 1.5s;
+    }
+
+    .name
+    {
+        text-align: center;
+        alignment: center;
+    }
+
+    .name h5, p
+    {
+        font-size: 9px;
+    }
+
+    .name h1
+    {
+        font-size: 35px;
+    }
+
+    .navItems
+    {
+        display: none;
+    }
+
+    .whoAmI .circle, .interests .circle, .philosophy .circle
+    {
+        width: 45%;
+        min-width: 100px;
+        max-width: 250px;
+    }
+}
+
+/*Smaller than the navBar*/
+@media (min-width: 890px)
+{
+/*Rework navBar into a selection menu*/
+    .initBackground #backgndImg
+    {
+        display: inline;
+    }
+
+    .initBackground #backgndImgMobile
+    {
+        display: none;
+    }
+
+    .aboutme h2
+    {
+        font-size: 40px;
+    }
+
+    .blogs h2
+    {
+        font-size: 40px;
+    }
+
+    .headshot
+    {
+        max-width: 300px;
+        max-height: 279px;
+        top: 30%;
+    }
+
+    .name h5, p
+    {
+        font-size: 10px;
+    }
+
+    .name h1
+    {
+        font-size: 30px;
+    }
+    .initBackground .name
+    {
+        top: 40%;
+    }
+
+    .blogs .griddedText h3
+    {
+        font-size: 20px;
+    }
+}
+
+/*Reduced functionality, but still sizable*/
+@media (min-width: 1096px)
+{
+/*only thing needing work is to scale down the main image and other text sizes*/
+    .aboutme h2
+    {
+        font-size: 50px;
+    }
+
+    .blogs h2
+    {
+        font-size: 50px;
+    }
+
+    .headshot
+    {
+        max-width: 400px;
+        max-height: 372px;
+        top: 30%;
+    }
+
+    .initBackground .name
+    {
+        top: 45%;
+    }
+
+    .name h5, p
+    {
+        font-size: 11px;
+    }
+
+    .name h1
+    {
+        font-size: 40px;
+    }
+
+    .blogs .griddedText h3
+    {
+        font-size: 24px;
+    }
+}
+
+/*Minimum size for full functionality*/
+@media (min-width: 1344px)
+{
+    .aboutme h2
+    {
+        font-size: 60px;
+    }
+
+    .blogs h2
+    {
+        font-size: 60px;
+    }
+
+    .headshot
+    {
+        max-width: 500px;
+        max-height: 465px;
+        top: 30%;
+    }
+
+    .initBackground .name
+    {
+        top: 45%;
+    }
+
+    .name h5, p
+    {
+        font-size: 13px;
+    }
+
+    .name h1
+    {
+        font-size: 60px;
+    }
+
+}
+
+/* Scroll Bar Style */
 ::-webkit-scrollbar
 {
     width: 12px;
@@ -521,7 +754,7 @@ body
     background: #002486;
 }
 
-/*Font Styles*/
+/* Font Styles */
 @font-face {
     font-family: "Ethnocentric Rg";
     src: url("assets/ethnocentric rg.ttf") format('truetype');
@@ -536,3 +769,11 @@ body
     font-family: "Blue Highway";
     src: url("assets/blue highway rg.otf") format("opentype");
 }
+/*
+Common Breakpoints:
+1920×1080 (9.61%)
+1366×768 (7.87%)
+360×640 (4.36%)
+414×896 (4.34%)
+1536×864 (4.11%)
+ */
