@@ -115,12 +115,12 @@ body
 
 @-webkit-keyframes slideHeadShotMobile
 {
-    100% { left: 25%; }
+    100% { left: calc(50% - 150px); }
 }
 
 @keyframes slideHeadShotMobile
 {
-    100% { left: 25%; }
+    100% { left: calc(50% - 150px); }
 }
 
 @-webkit-keyframes slideName
@@ -135,12 +135,12 @@ body
 
 @-webkit-keyframes slideNameMobile
 {
-    100% { left: 10%; }
+    100% { left: calc(50% - 204px); }
 }
 
 @keyframes slideNameMobile
 {
-    100% { left: 10%; }
+    100% { left: calc(50% - 204px); }
 }
 
 
@@ -179,6 +179,11 @@ body
 {
     display: inline;
     float: right;
+}
+
+.navItems #menu
+{
+    display: none;
 }
 
 .navItems .navLink
@@ -221,7 +226,6 @@ body
 .skillz
 {
     display: none;
-
     position: relative;
     margin-inside: 50px;
     background-color: var(--blueish_gray);
@@ -454,6 +458,11 @@ body
     align-items: center;
 }
 
+.footerDetails hr
+{
+    height: 200px;
+}
+
 .footerBrand
 {
     flex: 1;
@@ -477,11 +486,17 @@ body
     list-style: none;
     padding: 0;
     margin-top: 20px;
+    font-size: 16px;
 }
 
 .contactItem
 {
     margin-bottom: 10px;
+}
+
+.contactItem p
+{
+    font-size: 16px;
 }
 
 .generalFooterList
@@ -500,6 +515,11 @@ body
 .generalFooterList ul li
 {
     padding: 5px;
+}
+
+.generalFooterList ul li .footerLink
+{
+    font-size: 16px;
 }
 
 .generalFooterList .media
@@ -580,7 +600,9 @@ body
     .name
     {
         text-align: center;
-        alignment: center;
+        width: 408px;
+        margin: 0;
+        padding: 0;
     }
 
     .name h5, p
@@ -593,9 +615,23 @@ body
         font-size: 35px;
     }
 
-    .navItems
+    .topBar
+    {
+        transition: 0s;
+    }
+
+    .navItems ul
     {
         display: none;
+    }
+
+    .navItems #menu
+    {
+        float: right;
+        display: inline;
+        margin-top: 8px;
+        margin-right: 40px;
+        width: 35px;
     }
 
     .whoAmI .circle, .interests .circle, .philosophy .circle
@@ -604,6 +640,42 @@ body
         min-width: 100px;
         max-width: 250px;
     }
+
+    .footerDetails
+    {
+        display: block;
+    }
+
+    .footerDetails hr
+    {
+        height: 50px;
+    }
+
+    .footerBrand
+    {
+
+    }
+
+    #logobottom
+    {
+        padding-top: 20px;
+    }
+
+    /* -- Try to verticalize this
+    .footerText
+    {
+        font-size: 12px;
+    }
+
+    .contactItem p, .contactItem a
+    {
+        font-size: 12px;
+    }
+
+    .generalFooterList ul li .footerLink
+    {
+        font-size: 12px;
+    }*/
 }
 
 /*Smaller than the navBar*/

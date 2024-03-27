@@ -24,6 +24,12 @@ function loadTextFileToElement(path, id)
 
 function hideNavBarOnScroll()
 {
+    if(window.innerWidth <= 890)//constant navBar for phones
+    {
+        reloadOnResize();
+        return;
+    }
+
     var prevScrollpos = window.scrollY;
     window.onscroll = function()
     {
@@ -69,4 +75,12 @@ async function preventScrollDuringLoad()
     document.getElementById("html").style.overflow = "hidden";
     await sleep(2500);
     document.getElementById("html").style.overflow = "visible";
+}
+
+function reloadOnResize()
+{
+    window.onresize = function (event)
+    {
+        window.location.reload();
+    }
 }
