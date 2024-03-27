@@ -115,12 +115,12 @@ body
 
 @-webkit-keyframes slideHeadShotMobile
 {
-    100% { left: calc(50% - 150px); }
+    100% { left: calc(50% - 100px); }
 }
 
 @keyframes slideHeadShotMobile
 {
-    100% { left: calc(50% - 150px); }
+    100% { left: calc(50% - 100px); }
 }
 
 @-webkit-keyframes slideName
@@ -579,9 +579,9 @@ body
 
     .headshot
     {
-        max-width: 300px;
-        max-height: 279px;
-        top: 20%;
+        max-width: 200px;
+        max-height: 186px;
+        top: 15%;
         -webkit-animation: slideHeadShotMobile 1s forwards ;
         -webkit-animation-delay: 1.5s;
         animation: slideHeadShotMobile 1s forwards;
@@ -607,17 +607,24 @@ body
 
     .name h5, p
     {
-        font-size: 9px;
+        font-size: 7px;
     }
 
     .name h1
     {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .topBar
     {
         transition: 0s;
+        height: 50px;
+    }
+
+    .topBar #logo
+    {
+        padding: 9px 12px;
+        width: 125px;
     }
 
     .navItems ul
@@ -629,9 +636,9 @@ body
     {
         float: right;
         display: inline;
-        margin-top: 8px;
-        margin-right: 40px;
-        width: 35px;
+        margin-top: 1px;
+        margin-right: 20px;
+        width: 30px;
     }
 
     .whoAmI .circle, .interests .circle, .philosophy .circle
