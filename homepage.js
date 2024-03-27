@@ -26,7 +26,6 @@ function hideNavBarOnScroll()
 {
     if(window.innerWidth <= 890)//constant navBar for phones
     {
-        reloadOnResize();
         return;
     }
 
