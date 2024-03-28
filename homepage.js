@@ -65,8 +65,8 @@ async function sleep(ms)//call with await sleep(<amount in ms>)
 
 function onLoad()
 {
-    preventScrollDuringLoad();
-    window.scrollTo(0,0);
+    //preventScrollDuringLoad();
+    //window.scrollTo(0,0);
 }
 
 async function preventScrollDuringLoad()
