@@ -583,6 +583,7 @@ body
 /*Phone & Other small devices*/
 @media (max-width: 530px)
 {
+    /*Background*/
     .initBackground #backgndImg
     {
         display: none;
@@ -635,6 +636,7 @@ body
         font-size: 25px;
     }
 
+    /*NavBar*/
     .topBar
     {
         transition: 0s;
@@ -660,6 +662,7 @@ body
         width: 30px;
     }
 
+    /*About Me*/
     .whoAmI .circle, .interests .circle, .philosophy .circle
     {
         width: 80%;
@@ -689,6 +692,7 @@ body
         font-size: 24px;
     }
 
+    /*Blogs*/
     .blogs h2
     {
         font-size: 24px;
@@ -789,27 +793,57 @@ body
     .footerDetails
     {
         display: block;
+        alignment: center;
+        text-align: center;
+    }
+
+    .footerDetails .footerBrand
+    {
+        display: inline-block;
+        text-align: center;
     }
 
     .footerDetails hr
     {
-        height: 50px;
-    }
-
-    .footerBrand
-    {
-
+        height: 0;
+        visibility: hidden;
     }
 
     #logobottom
     {
+        max-width: 60%;
         padding-top: 20px;
     }
+
+    .footerText
+    {
+        font-size: 14px;
+        height: auto;
+    }
+
+    .generalFooterList
+    {
+        display: inline;
+        alignment: center;
+    }
+
+    .generalFooterList .footerLinkList
+    {
+        display: inline;
+        text-align: center;
+    }
+
+    .contactList
+    {
+        display: none;
+    }
+
 }
 
 /*Half Screen*/
 @media (min-width: 530px) and (max-width: 890px)
 {
+    /*Background*/
     .initBackground #backgndImg
     {
         display: none;
@@ -862,6 +896,7 @@ body
         font-size: 35px;
     }
 
+    /*NavBar*/
     .topBar
     {
         transition: 0s;
@@ -888,6 +923,7 @@ body
         width: 35px;
     }
 
+    /*About Me*/
     .whoAmI .circle, .interests .circle, .philosophy .circle
     {
         width: 45%;
@@ -906,14 +942,30 @@ body
         font-size: 10px;
     }
 
+    /*Footer*/
     .footerDetails
     {
-        display: block;
+        display: flex;
     }
 
     .footerDetails hr
     {
-        height: 50px;
+        height: 150px;
+    }
+
+    #emails
+    {
+        display: none;
+    }
+
+    .generalFooterList ul
+    {
+        padding: 0;
+    }
+
+    .generalFooterList .media
+    {
+        translate: 0%;
     }
 
     .footerBrand
@@ -946,7 +998,7 @@ body
 /*Smaller than the navBar*/
 @media (min-width: 890px)
 {
-/*Rework navBar into a selection menu*/
+    /*Background*/
     .initBackground #backgndImg
     {
         display: inline;
@@ -957,14 +1009,9 @@ body
         display: none;
     }
 
-    .aboutme h2
+    .initBackground .name
     {
-        font-size: 40px;
-    }
-
-    .blogs h2
-    {
-        font-size: 40px;
+        top: 40%;
     }
 
     .headshot
@@ -983,9 +1030,17 @@ body
     {
         font-size: 30px;
     }
-    .initBackground .name
+
+    /*About Me*/
+    .aboutme h2
     {
-        top: 40%;
+        font-size: 40px;
+    }
+
+    /*Blogs*/
+    .blogs h2
+    {
+        font-size: 40px;
     }
 
     .blogs .griddedText h3
@@ -997,15 +1052,10 @@ body
 /*Reduced functionality, but still sizable*/
 @media (min-width: 1096px)
 {
-/*only thing needing work is to scale down the main image and other text sizes*/
-    .aboutme h2
+    /*Background*/
+    .initBackground .name
     {
-        font-size: 50px;
-    }
-
-    .blogs h2
-    {
-        font-size: 50px;
+        top: 45%;
     }
 
     .headshot
@@ -1013,11 +1063,6 @@ body
         max-width: 400px;
         max-height: 372px;
         top: 30%;
-    }
-
-    .initBackground .name
-    {
-        top: 45%;
     }
 
     .name h5, p
@@ -1030,6 +1075,18 @@ body
         font-size: 40px;
     }
 
+    /*About me*/
+    .aboutme h2
+    {
+        font-size: 50px;
+    }
+
+    /*Blogs*/
+    .blogs h2
+    {
+        font-size: 50px;
+    }
+
     .blogs .griddedText h3
     {
         font-size: 24px;
@@ -1039,14 +1096,10 @@ body
 /*Minimum size for full functionality*/
 @media (min-width: 1344px)
 {
-    .aboutme h2
+    /*Background*/
+    .initBackground .name
     {
-        font-size: 60px;
-    }
-
-    .blogs h2
-    {
-        font-size: 60px;
+        top: 45%;
     }
 
     .headshot
@@ -1054,11 +1107,6 @@ body
         max-width: 500px;
         max-height: 465px;
         top: 30%;
-    }
-
-    .initBackground .name
-    {
-        top: 45%;
     }
 
     .name h5, p
@@ -1071,6 +1119,17 @@ body
         font-size: 60px;
     }
 
+    /*About me*/
+    .aboutme h2
+    {
+        font-size: 60px;
+    }
+
+    /*Blogs*/
+    .blogs h2
+    {
+        font-size: 60px;
+    }
 }
 
 /* Scroll Bar Style */
@@ -1106,11 +1165,3 @@ body
     font-family: "Blue Highway";
     src: url("assets/blue highway rg.otf") format("opentype");
 }
-/*
-Common Breakpoints:
-1920×1080 (9.61%)
-1366×768 (7.87%)
-360×640 (4.36%)
-414×896 (4.34%)
-1536×864 (4.11%)
- */
